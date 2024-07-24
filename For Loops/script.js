@@ -1,15 +1,19 @@
-let fuel = 1000;
-let distance = 0;
+let population = 100;
 
-while (fuel > 0) {
-  distance++;
-  if (distance >= 100 && distance <200){
-    continue
-  }
-  fuel--;
-  if (distance == 500) {
-    break;
-  }
+//population = population * 1.05
+//population *= 1.05
+
+
+
+// let i = 0;
+// while (i < 10) {
+//   population *= 1.05;
+//   console.log("Year: " + (i + 1) + " population: " + population)
+//   i++;
+
+// }
+
+for (let i = 0; i < 10; i++) {
+  population *= 1.05;
+  console.log("Year: " + (i + 1) + " population: " + population)
 }
-
-console.log(distance, fuel)
